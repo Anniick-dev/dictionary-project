@@ -5,11 +5,8 @@ import Dictionary from './Dictionary';
 function App() {
   return (
     <div className="App">
-      <header className="App-header"> Dictionary       
+      <h1 className="title"> Dictionary </h1>   
       <Dictionary />
-  
-      </header>
-
     </div>
   );
 }
