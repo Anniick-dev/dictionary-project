@@ -48,14 +48,15 @@ export default function Dictionary() {
         placeholder="Search for a word..."
         className="search"
       />
-      <span id="sound" className="sound" onClick={playSound}>
-        🔊
-      </span>
+     
       <div className="info-text">{infoText}</div>
       {data && (
         <div className="results">
           <div className="word">
-            <p>{data.word}</p>
+            <span id="sound" className="sound" onClick={playSound}>
+        🔊 {data.word}
+      </span>
+      <p></p>
             <span className="type">{data.meanings[0].partOfSpeech}</span>
           </div>
           <div className="meaning">
