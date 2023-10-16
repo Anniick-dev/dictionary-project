@@ -21,6 +21,21 @@ justify-content: center;
 font-size: 48px;
 }
 
+.word {
+text-transform: uppercase;
+font-size: 24px;
+}
+
+.type {
+  font-style: italic;
+  color: #fbde4d;
+  font-size: 12px;
+}
+
+.meaning {
+  font-size: 16px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -75,6 +90,11 @@ body {
   width: 400px;
   padding: 10px;
   border-radius: 10px;
+  margin: 10px;
+}
+
+.sound {
+  margin: 10px;
 }
 
 .search input {
