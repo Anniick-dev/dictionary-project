@@ -60,6 +60,7 @@ export default function Dictionary() {
             <span className="type">{data.meanings[0].partOfSpeech}</span>
           </div>
           <div className="meaning">
+          <span>{data.meanings[0].definitions[0].example}</span>
             <span>{data.meanings[0].definitions[0].definition}</span>
           </div>
         </div>
