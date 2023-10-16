@@ -83,19 +83,18 @@ body {
 }
 .container .search {
   position: relative;
-  margin: 35px 0 18px;
+  margin: 15px 0 10px;
 }
 
 .search {
   width: 400px;
   padding: 10px;
   border-radius: 10px;
-  margin: 10px;
 }
 
 .sound {
   margin: 10px;
-  
+
 }
 
 .search input {
@@ -203,4 +202,14 @@ ul .content::-webkit-scrollbar {
   .container{
     width: 350px;
   }
+}
+
+.footer {
+  margin-top: 10px;
+  color: white;
+  font-size: 10px;
+}
+
+a {
+  color: green;
 }

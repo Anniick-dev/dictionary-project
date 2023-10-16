@@ -16,7 +16,7 @@ export default function Dictionary() {
           setInfoText(`Oops :o we can't find "${word}".`);
           setData(null);
         } else {
-          setInfoText("Word found!");
+          setInfoText(`Your "${word}" has been found!`);
           setData(result[0]);
           setAudio(new Audio(result[0].phonetics[0].audio));
         }
