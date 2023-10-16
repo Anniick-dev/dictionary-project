@@ -16,7 +16,7 @@ export default function Dictionary() {
           setInfoText(`Oops :o we can't find "${word}".`);
           setData(null);
         } else {
-          setInfoText(`Your "${word}" has been found!`);
+          setInfoText(`Your word has been found!`);
           setData(result[0]);
           setAudio(new Audio(result[0].phonetics[0].audio));
         }
@@ -53,11 +53,11 @@ export default function Dictionary() {
       {data && (
         <div className="results">
           <div className="word">
-            <span id="sound" className="sound" onClick={playSound}>
-        🔊 {data.word}
-      </span>
+        <span>{data.word} </span>
       <p></p>
-            <span className="type">{data.meanings[0].partOfSpeech}</span>
+            <span className="type">{data.meanings[0].partOfSpeech}
+            <button id="sound" className="sound" onClick={playSound}>
+        Listen </button></span>
           </div>
           <div className="meaning">
           <span>{data.meanings[0].definitions[0].example}</span>
